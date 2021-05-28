@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Рубрика</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <style>@charset "UTF-8";:root{--swiper-theme-color:#007aff}:root{--swiper-navigation-size:44px}@font-face{font-family:OpenSans;src:url(../../fonts/OpenSans/OpenSans-Regular.woff);font-weight:400}@font-face{font-family:OpenSans;src:url(../../fonts/OpenSans/OpenSans-Italic.woff);font-weight:400;font-style:italic}@font-face{font-family:OpenSans;src:url(../../fonts/OpenSans/OpenSans-SemiBold.woff);font-weight:600}@font-face{font-family:OpenSans;src:url(../../fonts/OpenSans/OpenSans-Bold.woff);font-weight:700}@font-face{font-family:OpenSans;src:url(../../fonts/OpenSans/OpenSans-ExtraBold.woff);font-weight:800}html{font-family:OpenSans,sans-serif;font-size:18px;height:100%;font-weight:400;scroll-behavior:smooth}body{height:100%;scroll-behavior:smooth;text-rendering:optimizeSpeed;line-height:1.5;background:#f2f2f2}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box}ul[class]{list-style:none;padding:0}body,h1,li,p,ul[class]{margin:0}img{max-width:100%;display:block}button,input{font:inherit}@media (prefers-reduced-motion:reduce){*{-webkit-animation-duration:0s!important;animation-duration:0s!important;-webkit-animation-iteration-count:1!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}.wrapper{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.content{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}.container{margin:0 auto;max-width:1210px;width:100%;padding:0 15px}.btn{display:block;text-decoration:none;outline:0;border-radius:5px;background-color:#dc1915;text-transform:uppercase;letter-spacing:.05em;text-transform:uppercase;font-size:14px;line-height:125%;color:#fff;font-weight:700;padding:12px 24px}@-webkit-keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.logo{display:block;text-decoration:none;width:122px}@media screen and (max-width:575px){.logo{width:78px}}@media screen and (max-width:1090px){.main-nav{-webkit-box-ordinal-group:2;-webkit-order:1;-ms-flex-order:1;order:1;width:100%}}.main-nav__list{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}@media screen and (max-width:1090px){.main-nav__list{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}}.main-nav__item{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;position:relative;border-bottom:3px solid transparent}.main-nav__item:not(:last-child){margin-right:26px}.main-nav__item-arrow{width:8px;height:6px;fill:#000;margin-left:7px}.main-nav__link{display:block;text-decoration:none;font-size:14px;font-weight:700;color:#000;letter-spacing:.05em;text-transform:uppercase;padding:25px 0}.main-nav__sublist{display:none;position:absolute;top:-webkit-calc(100% + 3px);top:calc(100% + 3px);z-index:1;left:-13px;background-color:#fff;-webkit-box-shadow:0 4px 15px rgba(0,0,0,.1);box-shadow:0 4px 15px rgba(0,0,0,.1);border-radius:0 0 3px 3px;-webkit-animation-duration:.2s;animation-duration:.2s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:fadeIn;animation-name:fadeIn}.main-nav__subitem:not(:last-child){border-bottom:1px solid #c8c8c8}.main-nav__sublink{display:block;text-transform:uppercase;text-decoration:none;color:#000;letter-spacing:.05em;font-size:14px;line-height:125%;padding:17px 20px;white-space:nowrap}.lang{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}@media screen and (max-width:1090px){.lang{margin-left:auto;margin-right:23px}}.lang__link{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;text-decoration:none;color:#000;font-size:14px;min-width:34px;min-height:28px;border-radius:5px}@media screen and (max-width:575px){.lang__link{font-size:12px;min-width:29px;min-height:24px}}.lang__link--active{background-color:#dfdfdf}.user-prev{position:relative;padding:17px 0}@media screen and (max-width:1090px){.user-prev{margin-right:25px}}.user-prev__header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.user-prev__menu{display:none;position:absolute;top:100%;right:0;background:#fff;-webkit-box-shadow:0 4px 15px rgba(0,0,0,.1);box-shadow:0 4px 15px rgba(0,0,0,.1);border-radius:0 0 3px 3px;-webkit-animation-duration:.2s;animation-duration:.2s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:fadeIn;animation-name:fadeIn}.user-prev__menu-link{display:block;text-decoration:none;white-space:nowrap;text-transform:uppercase;letter-spacing:.05em;color:#000;padding:16px 22px;font-size:14px;line-height:125%}.user-prev__menu-link:not(:last-child){border-bottom:1px solid #c8c8c8}.user-prev__name{display:block;font-size:14px;line-height:125%}@media screen and (max-width:860px){.user-prev__name{display:none}}.user-prev__logo{width:40px;height:40px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;background-color:#dfdfdf;padding:11px;border-radius:50%;margin-left:9px}@media screen and (max-width:860px){.user-prev__logo{width:32px;height:32px;margin-left:0}}@media screen and (max-width:575px){.user-prev__logo{width:24px;height:24px;padding:8px}}.user-prev__arrow{width:8px;height:8px;fill:#dc1915;margin-left:8px}@media screen and (max-width:860px){.user-prev__arrow{display:none}}.sandwich{display:none}@media screen and (max-width:860px){.sandwich{display:block}}.sandwich__open-btn{display:block;outline:0;padding:0;border:0;background-color:transparent}.sandwich__line{display:block;width:22px;height:1px;background-color:#1f3c53}.sandwich__line:not(:last-child){margin-bottom:6px}.sandwich__content{display:none;position:fixed;width:100%;height:100%;top:0;left:0;background:rgba(2,3,21,.6);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);z-index:9}.sandwich__menu{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:fixed;right:-100%;background-color:#f2f2f2;top:0;width:575px;height:100%;overflow:auto;z-index:10}@media screen and (max-width:575px){.sandwich__menu{width:100%}}.sandwich__back{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;outline:0;border:0;padding:0;background-color:transparent}.sandwich__back-arrow{width:30px;height:30px}.sandwich__dropdown{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:fixed;right:-100%;background-color:#f2f2f2;top:0;width:375px;height:100%;overflow:auto;z-index:10}@media screen and (max-width:375px){.sandwich__dropdown{width:100%}}.sandwich__dropdown-title{display:block;text-transform:uppercase;font-size:14px;letter-spacing:.05em;text-transform:uppercase;font-weight:700}.sandwich__header{padding:15px 20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.sandwich__header-right{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.sandwich__user-prev{padding:0}.sandwich__user-prev .user-prev__logo{width:24px;height:24px;padding:7px}.sandwich__close-btn{outline:0;border:0;background-color:transparent;padding:0;width:16px;height:16px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.sandwich__close-icon{width:16px;height:16px}.sandwich__nav-list{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start}.sandwich__nav-item{width:100%;background-color:#fff}.sandwich__nav-item:not(:last-child){margin-right:0;border-bottom:1px solid #c8c8c8}.sandwich__nav-arrow{fill:#dc1915;-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg);width:13px;height:13px}.sandwich__nav-link{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding:17px 20px;font-size:14px;line-height:125%;font-weight:400;width:100%}.sandwich__nav-link--red{color:#dc1915;font-weight:700}.social{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;padding-top:55px}@media screen and (max-width:768px){.social{padding-top:45px}}.social--padding{padding-top:0}.social__link{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;text-decoration:none;width:32px;height:32px;border-radius:50%}.social__link:not(:last-child){margin-right:32px}.social__link--facebook{background-color:#42599e}.social__link--instagram{background:-o-linear-gradient(67.75deg,#ffc658 14.25%,#f62b37 42.48%,#c82091 68.99%,#3542e0 98.93%);background:linear-gradient(22.25deg,#ffc658 14.25%,#f62b37 42.48%,#c82091 68.99%,#3542e0 98.93%)}.social__link--youtube{background-color:#db100d}.social__link-icon{width:20px;height:20px;fill:#f1f2f2}.catalog{padding:100px 0 50px 0;text-align:center}@media screen and (max-width:575px){.catalog{padding:30px 0}}.catalog__list{display:grid;grid-template-columns:repeat(4,1fr);grid-gap:20px}@media screen and (max-width:1080px){.catalog__list{grid-template-columns:repeat(3,1fr)}}@media screen and (max-width:860px){.catalog__list{grid-template-columns:repeat(2,1fr)}}@media screen and (max-width:520px){.catalog__list{display:block}}.card-prev{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative;height:280px;background-repeat:no-repeat;background-size:cover;background-position:center;border-radius:5px;padding:20px;color:#fff;top:0}@media screen and (max-width:520px){.card-prev{margin-bottom:20px;height:335px}}.card-prev:first-child{grid-row:1/3;grid-column:1/3;height:100%}@media screen and (max-width:1080px){.card-prev:first-child{grid-row:1;grid-column:1}}@media screen and (max-width:520px){.card-prev:first-child{height:335px}}.card-prev:not(:first-child) .card-prev__title{font-size:22px;line-height:120%}.card-prev__bg{background:-webkit-gradient(linear,left top,left bottom,from(rgba(9,0,0,.67)),color-stop(22.92%,rgba(0,0,0,.4)),color-stop(59.37%,rgba(0,0,0,0)));background:-o-linear-gradient(top,rgba(9,0,0,.67) 0,rgba(0,0,0,.4) 22.92%,rgba(0,0,0,0) 59.37%);background:linear-gradient(180deg,rgba(9,0,0,.67) 0,rgba(0,0,0,.4) 22.92%,rgba(0,0,0,0) 59.37%);opacity:.89;position:absolute;bottom:0;left:0;z-index:0;width:100%;height:67%;-webkit-transform:matrix(1,0,0,-1,0,0);-ms-transform:matrix(1,0,0,-1,0,0);transform:matrix(1,0,0,-1,0,0);border-radius:5px 5px 0 0}.card-prev__info{position:relative;z-index:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-content:flex-start;-ms-flex-line-pack:start;align-content:flex-start}.card-prev__header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.card-prev__content{text-align:left}.card-prev__title{display:block;color:#fff;text-decoration:none;margin:0;font-size:32px;line-height:120%;font-weight:700}@media screen and (max-width:1080px){.card-prev__title{font-size:26px}}@media screen and (max-width:680px){.card-prev__title{font-size:24px}}@media screen and (max-width:575px){.card-prev__title{font-size:20px}}.card-prev__desc{padding-top:10px;line-height:140%}@media screen and (max-width:1080px){.card-prev__desc{font-size:16px}}.card-prev__category{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;text-decoration:none;color:#000;text-transform:uppercase;font-size:10px;line-height:125%;font-weight:700;background:#f2f2f2;border-radius:3px;padding:6px 12px}.card-prev__bookmark{position:relative}.card-prev__bookmark-btn{display:block;outline:0;border:0;background-color:transparent;padding:0}.card-prev__bookmark-icon{fill:none;stroke:#fff;width:18px;height:24px}.card-prev__bookmark-info{position:absolute;top:100%;left:-43px;width:258px;display:none;text-align:left;-webkit-animation-duration:.2s;animation-duration:.2s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:fadeIn;animation-name:fadeIn;padding-top:25px}@media screen and (max-width:1260px){.card-prev__bookmark-info{left:-15px}}.card-prev__bookmark-content{padding:24px 23px 25px 23px;-webkit-box-shadow:0 4px 15px rgba(0,0,0,.1);box-shadow:0 4px 15px rgba(0,0,0,.1);background-color:#fff;border-radius:5px}@media screen and (max-width:1260px){.card-prev__bookmark-content{padding:20px 15px}}.card-prev__bookmark-content::before{position:absolute;content:'';top:-3px;left:40px;border:12px solid transparent;border-bottom:16px solid #fff}@media screen and (max-width:1260px){.card-prev__bookmark-content::before{left:12px}}.card-prev__bookmark-title{display:block;font-size:15px;line-height:140%;color:#282828;font-weight:600}.card-prev__bookmark-desc{padding-top:3px;font-size:13px;line-height:140%;color:#282828}.form__checkbox-field{display:none}.page__header{padding-top:30px}@media screen and (max-width:640px){.page__header{display:none}}.page__header .container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.page__content{padding-top:25px}@media screen and (max-width:575px){.page__content{padding-top:20px;padding-bottom:30px}}.page__title{display:block;text-align:center;font-size:36px;line-height:140%;font-weight:700;color:#1f3c53}.breadcrumbs{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.breadcrumbs__arrow{width:10px;height:10px;fill:none;stroke:#a8a9ab;margin:0 17px}.breadcrumbs__item{display:block;text-decoration:none;font-size:13px;line-height:140%;color:#828282}.rubric-list{padding:30px 0 0 0}@media screen and (max-width:575px){.rubric-list{padding:20px 0 0 0}}.header{width:100%;z-index:2;background:#f2f2f2;border-bottom:1px solid #bdbdbd}.header__logo{position:relative;top:-4px}.header__wrap{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}@media screen and (max-width:860px){.header__download-btn{display:none}}@media screen and (max-width:860px){.header__nav{display:none}}</style>
+    <link rel="stylesheet" href="css/styles.min.css" media="print" onload="this.media='all'">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <header class="header">
+          <div class="container">
+            <div class="header__wrap"><a class="logo header__logo" href="/"><img class="logo__img" src="images/general/logo.svg" alt=""></a>
+              <nav class="main-nav header__nav">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item"><a class="main-nav__link" href="/">Новости</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="/">Темы</a>
+                    <svg class="svg-icon icon-arrow main-nav__item-arrow">
+                      <use xlink:href="images/svg/sprite/symbol/sprite.svg#arrow"></use>
+                    </svg>
+                    <ul class="main-nav__sublist">
+                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="/">Big Data</a></li>
+                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="/">Must Have</a></li>
+                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="/">Топ</a></li>
+                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="/">Экспертиза</a></li>
+                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="/">Мнение</a></li>
+                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="/">Интервью</a></li>
+                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="/">Маркетинг</a></li>
+                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="/">Start Up</a></li>
+                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="/">story</a></li>
+                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="/">личный опыт</a></li>
+                    </ul>
+                  </li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="/">Рецепты</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="/">Видео</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="/">Спецпроекты</a></li>
+                </ul>
+              </nav>
+              <div class="lang"><a class="lang__link lang__link--active" href="/">Ru</a><a class="lang__link" href="/">En</a></div>
+              <div class="user-prev">
+                <div class="user-prev__header"><span class="user-prev__name">Личный кабинет</span>
+                  <div class="user-prev__logo">
+                    <svg class="svg-icon icon-user user-prev__logo-icon">
+                      <use xlink:href="images/svg/sprite/symbol/sprite.svg#user"></use>
+                    </svg>
+                  </div>
+                  <svg class="svg-icon icon-arrow user-prev__arrow">
+                    <use xlink:href="images/svg/sprite/symbol/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+                <div class="user-prev__menu"><a class="user-prev__menu-link" href="/">Избранное</a><a class="user-prev__menu-link" href="/">Выйти из аккаунта</a></div>
+                <div class="sandwich__content"></div>
+                <div class="sandwich__menu">
+                  <div class="sandwich__header">
+                    <div class="user-prev__logo">
+                      <svg class="svg-icon icon-user user-prev__logo-icon">
+                        <use xlink:href="images/svg/sprite/symbol/sprite.svg#user"></use>
+                      </svg>
+                    </div>
+                    <button class="sandwich__close-btn" type="button">
+                      <svg class="svg-icon icon-close sandwich__close-icon">
+                        <use xlink:href="images/svg/sprite/symbol/sprite.svg#close"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <nav class="main-nav sandwich__nav">
+                    <ul class="main-nav__list sandwich__nav-list">
+                      <li class="main-nav__item sandwich__nav-item"><a class="main-nav__link sandwich__nav-link" href="/">Избранное</a></li>
+                      <li class="main-nav__item sandwich__nav-item"><a class="main-nav__link sandwich__nav-link" href="/">Выйти из аккаунта</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div><a class="btn download-btn header__download-btn" href="http://kraftheinzfoodservice.ru/idei/">Cкачать газету</a>
+              <div class="sandwich">
+                <button class="sandwich__open-btn" type="button"><span class="sandwich__line"></span><span class="sandwich__line"></span><span class="sandwich__line"></span></button>
+                <div class="sandwich__content"></div>
+                <div class="sandwich__menu">
+                  <div class="sandwich__header"><a class="logo sandwich__logo" href="/"><img class="logo__img" src="images/general/logo.svg" alt="" width="78"></a>
+                    <div class="sandwich__header-right">
+                      <div class="lang"><a class="lang__link lang__link--active" href="/">Ru</a><a class="lang__link" href="/">En</a></div>
+                      <div class="user-prev sandwich__user-prev sandwich">
+                        <div class="user-prev__header sandwich__open-btn">
+                          <div class="user-prev__logo">
+                            <svg class="svg-icon icon-user user-prev__logo-icon">
+                              <use xlink:href="images/svg/sprite/symbol/sprite.svg#user"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="sandwich__content">
+                          <div class="sandwich__menu">
+                            <div class="sandwich__header">
+                              <div class="user-prev__logo">
+                                <svg class="svg-icon icon-user user-prev__logo-icon">
+                                  <use xlink:href="images/svg/sprite/symbol/sprite.svg#user"></use>
+                                </svg>
+                              </div>
+                              <button class="sandwich__close-btn" type="button">
+                                <svg class="svg-icon icon-close sandwich__close-icon">
+                                  <use xlink:href="images/svg/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </button>
+                            </div>
+                            <nav class="main-nav sandwich__nav">
+                              <ul class="main-nav__list sandwich__nav-list">
+                                <li class="main-nav__item sandwich__nav-item"><a class="main-nav__link sandwich__nav-link" href="/">Избранное</a></li>
+                                <li class="main-nav__item sandwich__nav-item"><a class="main-nav__link sandwich__nav-link" href="/">Выйти из аккаунта</a></li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="sandwich__close-btn" type="button">
+                        <svg class="svg-icon icon-close sandwich__close-icon">
+                          <use xlink:href="images/svg/sprite/symbol/sprite.svg#close"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <nav class="main-nav sandwich__nav">
+                    <ul class="main-nav__list sandwich__nav-list">
+                      <li class="main-nav__item sandwich__nav-item"><a class="main-nav__link sandwich__nav-link" href="/">Новости</a></li>
+                      <li class="main-nav__item sandwich__nav-item"><a class="main-nav__link sandwich__nav-link" href="/">Темы
+                          <svg class="svg-icon icon-arrow3 main-nav__item-arrow sandwich__nav-arrow">
+                            <use xlink:href="images/svg/sprite/symbol/sprite.svg#arrow3"></use>
+                          </svg></a>
+                        <div class="sandwich__dropdown">
+                          <div class="sandwich__header">
+                            <button class="sandwich__back" type="button">
+                              <svg class="svg-icon icon-arrow5 sandwich__back-arrow">
+                                <use xlink:href="images/svg/sprite/symbol/sprite.svg#arrow5"></use>
+                              </svg>
+                            </button><span class="sandwich__dropdown-title">Темы</span>
+                            <button class="sandwich__close-btn" type="button">
+                              <svg class="svg-icon icon-close sandwich__close-icon">
+                                <use xlink:href="images/svg/sprite/symbol/sprite.svg#close"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <nav class="sandwich__nav">
+                            <ul class="sandwich__nav-list">
+                              <li class="main-nav__subitem sandwich__nav-item"><a class="main-nav__sublink sandwich__nav-link" href="/">Big Data</a></li>
+                              <li class="main-nav__subitem sandwich__nav-item"><a class="main-nav__sublink sandwich__nav-link" href="/">Must Have</a></li>
+                              <li class="main-nav__subitem sandwich__nav-item"><a class="main-nav__sublink sandwich__nav-link" href="/">Топ</a></li>
+                              <li class="main-nav__subitem sandwich__nav-item"><a class="main-nav__sublink sandwich__nav-link" href="/">Экспертиза</a></li>
+                              <li class="main-nav__subitem sandwich__nav-item"><a class="main-nav__sublink sandwich__nav-link" href="/">Мнение</a></li>
+                              <li class="main-nav__subitem sandwich__nav-item"><a class="main-nav__sublink sandwich__nav-link" href="/">Интервью</a></li>
+                              <li class="main-nav__subitem sandwich__nav-item"><a class="main-nav__sublink sandwich__nav-link" href="/">Маркетинг</a></li>
+                              <li class="main-nav__subitem sandwich__nav-item"><a class="main-nav__sublink sandwich__nav-link" href="/">Start Up</a></li>
+                              <li class="main-nav__subitem sandwich__nav-item"><a class="main-nav__sublink sandwich__nav-link" href="/">story</a></li>
+                              <li class="main-nav__subitem sandwich__nav-item"><a class="main-nav__sublink sandwich__nav-link" href="/">личный опыт</a></li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </li>
+                      <li class="main-nav__item sandwich__nav-item"><a class="main-nav__link sandwich__nav-link" href="/">Рецепты</a></li>
+                      <li class="main-nav__item sandwich__nav-item"><a class="main-nav__link sandwich__nav-link" href="/">Видео</a></li>
+                      <li class="main-nav__item sandwich__nav-item"><a class="main-nav__link sandwich__nav-link" href="/">Спецпроекты</a></li>
+                      <li class="main-nav__item sandwich__nav-item"><a class="main-nav__link sandwich__nav-link" href="/">Партнеры</a></li>
+                      <li class="main-nav__item sandwich__nav-item"><a class="main-nav__link sandwich__nav-link" href="/">МЕДИАКИТ</a></li>
+                      <li class="main-nav__item sandwich__nav-item"><a class="main-nav__link sandwich__nav-link sandwich__nav-link--red" href="/">скачать газету</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="page">
+          <div class="page__header">
+            <div class="container">
+              <div class="breadcrumbs"><a class="breadcrumbs__item breadcrumbs__link" href="/">Главная</a>
+                <svg class="svg-icon icon-arrow6 breadcrumbs__arrow">
+                  <use xlink:href="images/svg/sprite/symbol/sprite.svg#arrow6"></use>
+                </svg><span class="breadcrumbs__item">Название раздела</span>
+              </div>
+              <div class="social social--padding"><a class="social__link social__link--facebook" href="/">
+                  <svg class="svg-icon icon-facebook social__link-icon">
+                    <use xlink:href="images/svg/sprite/symbol/sprite.svg#facebook"></use>
+                  </svg></a><a class="social__link social__link--instagram" href="/">
+                  <svg class="svg-icon icon-instagram social__link-icon">
+                    <use xlink:href="images/svg/sprite/symbol/sprite.svg#instagram"></use>
+                  </svg></a><a class="social__link social__link--youtube" href="/">
+                  <svg class="svg-icon icon-youtube social__link-icon">
+                    <use xlink:href="images/svg/sprite/symbol/sprite.svg#youtube"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+          <div class="page__content">
+            <div class="container">
+              <h1 class="page__title">Рубрика</h1>
+              <div class="catalog rubric-list">
+                <div class="catalog__list">
+                  <div class="card-prev" style="background-image: url('images/content/rubric-img.jpg');">
+                    <div class="card-prev__bg"></div>
+                    <div class="card-prev__info">
+                      <div class="card-prev__header">
+                        <div class="card-prev__bookmark">
+                          <button class="card-prev__bookmark-btn" type="button">
+                            <svg class="svg-icon icon-bookmark card-prev__bookmark-icon">
+                              <use xlink:href="images/svg/sprite/symbol/sprite.svg#bookmark"></use>
+                            </svg>
+                            <div class="card-prev__bookmark-info">
+                              <div class="card-prev__bookmark-content"><span class="card-prev__bookmark-title">Добавить в закладки</span>
+                                <p class="card-prev__bookmark-desc">Вы сможете увидеть публикацию в личном кабинете</p>
+                              </div>
+                            </div>
+                          </button>
+                        </div><a class="card-prev__category" href="/">рецепты</a>
+                      </div>
+                      <div class="card-prev__content"><a class="card-prev__title" href="/">Хендролл с тунцом</a>
+                        <p class="card-prev__desc">У компании KraftHeinz новинка — профессиональный майонез Heinz 78% на настоящих яичных желтках. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-prev" style="background-image: url('images/content/rubric-img2.jpg');">
+                    <div class="card-prev__bg"></div>
+                    <div class="card-prev__info">
+                      <div class="card-prev__header">
+                        <div class="card-prev__bookmark">
+                          <button class="card-prev__bookmark-btn" type="button">
+                            <svg class="svg-icon icon-bookmark card-prev__bookmark-icon">
+                              <use xlink:href="images/svg/sprite/symbol/sprite.svg#bookmark"></use>
+                            </svg>
+                            <div class="card-prev__bookmark-info">
+                              <div class="card-prev__bookmark-content"><span class="card-prev__bookmark-title">Добавить в закладки</span>
+                                <p class="card-prev__bookmark-desc">Вы сможете увидеть публикацию в личном кабинете</p>
+                              </div>
+                            </div>
+                          </button>
+                        </div><a class="card-prev__category" href="/">рецепты</a>
+                      </div>
+                      <div class="card-prev__content"><a class="card-prev__title" href="/">Стейк из свеклы с соусом терияки</a></div>
+                    </div>
+                  </div>
+                  <div class="card-prev" style="background-image: url('images/content/rubric-img3.jpg');">
+                    <div class="card-prev__bg"></div>
+                    <div class="card-prev__info">
+                      <div class="card-prev__header">
+                        <div class="card-prev__bookmark">
+                          <button class="card-prev__bookmark-btn" type="button">
+                            <svg class="svg-icon icon-bookmark card-prev__bookmark-icon">
+                              <use xlink:href="images/svg/sprite/symbol/sprite.svg#bookmark"></use>
+                            </svg>
+                            <div class="card-prev__bookmark-info">
+                              <div class="card-prev__bookmark-content"><span class="card-prev__bookmark-title">Добавить в закладки</span>
+                                <p class="card-prev__bookmark-desc">Вы сможете увидеть публикацию в личном кабинете</p>
+                              </div>
+                            </div>
+                          </button>
+                        </div><a class="card-prev__category" href="/">рецепты</a>
+                      </div>
+                      <div class="card-prev__content"><a class="card-prev__title" href="/">Свинина <br>в кисло-сладком соусе</a></div>
+                    </div>
+                  </div>
+                  <div class="card-prev" style="background-image: url('images/content/rubric-img4.jpg');">
+                    <div class="card-prev__bg"></div>
+                    <div class="card-prev__info">
+                      <div class="card-prev__header">
+                        <div class="card-prev__bookmark">
+                          <button class="card-prev__bookmark-btn" type="button">
+                            <svg class="svg-icon icon-bookmark card-prev__bookmark-icon">
+                              <use xlink:href="images/svg/sprite/symbol/sprite.svg#bookmark"></use>
+                            </svg>
+                            <div class="card-prev__bookmark-info">
+                              <div class="card-prev__bookmark-content"><span class="card-prev__bookmark-title">Добавить в закладки</span>
+                                <p class="card-prev__bookmark-desc">Вы сможете увидеть публикацию в личном кабинете</p>
+                              </div>
+                            </div>
+                          </button>
+                        </div><a class="card-prev__category" href="/">рецепты</a>
+                      </div>
+                      <div class="card-prev__content"><a class="card-prev__title" href="/">Кокосовый <br>сорбет с томатно-клубничным гаспачо</a></div>
+                    </div>
+                  </div>
+                  <div class="card-prev" style="background-image: url('images/content/rubric-img5.jpg');">
+                    <div class="card-prev__bg"></div>
+                    <div class="card-prev__info">
+                      <div class="card-prev__header">
+                        <div class="card-prev__bookmark">
+                          <button class="card-prev__bookmark-btn" type="button">
+                            <svg class="svg-icon icon-bookmark card-prev__bookmark-icon">
+                              <use xlink:href="images/svg/sprite/symbol/sprite.svg#bookmark"></use>
+                            </svg>
+                            <div class="card-prev__bookmark-info">
+                              <div class="card-prev__bookmark-content"><span class="card-prev__bookmark-title">Добавить в закладки</span>
+                                <p class="card-prev__bookmark-desc">Вы сможете увидеть публикацию в личном кабинете</p>
+                              </div>
+                            </div>
+                          </button>
+                        </div><a class="card-prev__category" href="/">рецепты</a>
+                      </div>
+                      <div class="card-prev__content"><a class="card-prev__title" href="/">Болгарский перец со страчателлой и соусом Том Ям</a></div>
+                    </div>
+                  </div>
+                  <div class="card-prev" style="background-image: url('images/content/rubric-img2.jpg');">
+                    <div class="card-prev__bg"></div>
+                    <div class="card-prev__info">
+                      <div class="card-prev__header">
+                        <div class="card-prev__bookmark">
+                          <button class="card-prev__bookmark-btn" type="button">
+                            <svg class="svg-icon icon-bookmark card-prev__bookmark-icon">
+                              <use xlink:href="images/svg/sprite/symbol/sprite.svg#bookmark"></use>
+                            </svg>
+                            <div class="card-prev__bookmark-info">
+                              <div class="card-prev__bookmark-content"><span class="card-prev__bookmark-title">Добавить в закладки</span>
+                                <p class="card-prev__bookmark-desc">Вы сможете увидеть публикацию в личном кабинете</p>
+                              </div>
+                            </div>
+                          </button>
+                        </div><a class="card-prev__category" href="/">рецепты</a>
+                      </div>
+                      <div class="card-prev__content"><a class="card-prev__title" href="/">Стейк из свеклы с соусом терияки</a></div>
+                    </div>
+                  </div>
+                  <div class="card-prev" style="background-image: url('images/content/rubric-img3.jpg');">
+                    <div class="card-prev__bg"></div>
+                    <div class="card-prev__info">
+                      <div class="card-prev__header">
+                        <div class="card-prev__bookmark">
+                          <button class="card-prev__bookmark-btn" type="button">
+                            <svg class="svg-icon icon-bookmark card-prev__bookmark-icon">
+                              <use xlink:href="images/svg/sprite/symbol/sprite.svg#bookmark"></use>
+                            </svg>
+                            <div class="card-prev__bookmark-info">
+                              <div class="card-prev__bookmark-content"><span class="card-prev__bookmark-title">Добавить в закладки</span>
+                                <p class="card-prev__bookmark-desc">Вы сможете увидеть публикацию в личном кабинете</p>
+                              </div>
+                            </div>
+                          </button>
+                        </div><a class="card-prev__category" href="/">рецепты</a>
+                      </div>
+                      <div class="card-prev__content"><a class="card-prev__title" href="/">Свинина <br>в кисло-сладком соусе</a></div>
+                    </div>
+                  </div>
+                  <div class="card-prev" style="background-image: url('images/content/rubric-img.jpg');">
+                    <div class="card-prev__bg"></div>
+                    <div class="card-prev__info">
+                      <div class="card-prev__header">
+                        <div class="card-prev__bookmark">
+                          <button class="card-prev__bookmark-btn" type="button">
+                            <svg class="svg-icon icon-bookmark card-prev__bookmark-icon">
+                              <use xlink:href="images/svg/sprite/symbol/sprite.svg#bookmark"></use>
+                            </svg>
+                            <div class="card-prev__bookmark-info">
+                              <div class="card-prev__bookmark-content"><span class="card-prev__bookmark-title">Добавить в закладки</span>
+                                <p class="card-prev__bookmark-desc">Вы сможете увидеть публикацию в личном кабинете</p>
+                              </div>
+                            </div>
+                          </button>
+                        </div><a class="card-prev__category" href="/">рецепты</a>
+                      </div>
+                      <div class="card-prev__content"><a class="card-prev__title" href="/">Хендролл <br>с тунцом</a></div>
+                    </div>
+                  </div>
+                  <div class="card-prev" style="background-image: url('images/content/rubric-img4.jpg');">
+                    <div class="card-prev__bg"></div>
+                    <div class="card-prev__info">
+                      <div class="card-prev__header">
+                        <div class="card-prev__bookmark">
+                          <button class="card-prev__bookmark-btn" type="button">
+                            <svg class="svg-icon icon-bookmark card-prev__bookmark-icon">
+                              <use xlink:href="images/svg/sprite/symbol/sprite.svg#bookmark"></use>
+                            </svg>
+                            <div class="card-prev__bookmark-info">
+                              <div class="card-prev__bookmark-content"><span class="card-prev__bookmark-title">Добавить в закладки</span>
+                                <p class="card-prev__bookmark-desc">Вы сможете увидеть публикацию в личном кабинете</p>
+                              </div>
+                            </div>
+                          </button>
+                        </div><a class="card-prev__category" href="/">рецепты</a>
+                      </div>
+                      <div class="card-prev__content"><a class="card-prev__title" href="/">Кокосовый <br>сорбет с томатно-клубничным гаспачо</a></div>
+                    </div>
+                  </div>
+                  <div class="card-prev" style="background-image: url('images/content/rubric-img.jpg');">
+                    <div class="card-prev__bg"></div>
+                    <div class="card-prev__info">
+                      <div class="card-prev__header">
+                        <div class="card-prev__bookmark">
+                          <button class="card-prev__bookmark-btn" type="button">
+                            <svg class="svg-icon icon-bookmark card-prev__bookmark-icon">
+                              <use xlink:href="images/svg/sprite/symbol/sprite.svg#bookmark"></use>
+                            </svg>
+                            <div class="card-prev__bookmark-info">
+                              <div class="card-prev__bookmark-content"><span class="card-prev__bookmark-title">Добавить в закладки</span>
+                                <p class="card-prev__bookmark-desc">Вы сможете увидеть публикацию в личном кабинете</p>
+                              </div>
+                            </div>
+                          </button>
+                        </div><a class="card-prev__category" href="/">рецепты</a>
+                      </div>
+                      <div class="card-prev__content"><a class="card-prev__title" href="/">Хендролл <br>с тунцом</a></div>
+                    </div>
+                  </div>
+                  <div class="card-prev" style="background-image: url('images/content/rubric-img4.jpg');">
+                    <div class="card-prev__bg"></div>
+                    <div class="card-prev__info">
+                      <div class="card-prev__header">
+                        <div class="card-prev__bookmark">
+                          <button class="card-prev__bookmark-btn" type="button">
+                            <svg class="svg-icon icon-bookmark card-prev__bookmark-icon">
+                              <use xlink:href="images/svg/sprite/symbol/sprite.svg#bookmark"></use>
+                            </svg>
+                            <div class="card-prev__bookmark-info">
+                              <div class="card-prev__bookmark-content"><span class="card-prev__bookmark-title">Добавить в закладки</span>
+                                <p class="card-prev__bookmark-desc">Вы сможете увидеть публикацию в личном кабинете</p>
+                              </div>
+                            </div>
+                          </button>
+                        </div><a class="card-prev__category" href="/">рецепты</a>
+                      </div>
+                      <div class="card-prev__content"><a class="card-prev__title" href="/">Кокосовый <br>сорбет с томатно-клубничным гаспачо</a></div>
+                    </div>
+                  </div>
+                  <div class="card-prev" style="background-image: url('images/content/rubric-img5.jpg');">
+                    <div class="card-prev__bg"></div>
+                    <div class="card-prev__info">
+                      <div class="card-prev__header">
+                        <div class="card-prev__bookmark">
+                          <button class="card-prev__bookmark-btn" type="button">
+                            <svg class="svg-icon icon-bookmark card-prev__bookmark-icon">
+                              <use xlink:href="images/svg/sprite/symbol/sprite.svg#bookmark"></use>
+                            </svg>
+                            <div class="card-prev__bookmark-info">
+                              <div class="card-prev__bookmark-content"><span class="card-prev__bookmark-title">Добавить в закладки</span>
+                                <p class="card-prev__bookmark-desc">Вы сможете увидеть публикацию в личном кабинете</p>
+                              </div>
+                            </div>
+                          </button>
+                        </div><a class="card-prev__category" href="/">рецепты</a>
+                      </div>
+                      <div class="card-prev__content"><a class="card-prev__title" href="/">Болгарский перец <br>со страчателлой и соусом Том Ям</a></div>
+                    </div>
+                  </div>
+                  <div class="card-prev" style="background-image: url('images/content/rubric-img2.jpg');">
+                    <div class="card-prev__bg"></div>
+                    <div class="card-prev__info">
+                      <div class="card-prev__header">
+                        <div class="card-prev__bookmark">
+                          <button class="card-prev__bookmark-btn" type="button">
+                            <svg class="svg-icon icon-bookmark card-prev__bookmark-icon">
+                              <use xlink:href="images/svg/sprite/symbol/sprite.svg#bookmark"></use>
+                            </svg>
+                            <div class="card-prev__bookmark-info">
+                              <div class="card-prev__bookmark-content"><span class="card-prev__bookmark-title">Добавить в закладки</span>
+                                <p class="card-prev__bookmark-desc">Вы сможете увидеть публикацию в личном кабинете</p>
+                              </div>
+                            </div>
+                          </button>
+                        </div><a class="card-prev__category" href="/">рецепты</a>
+                      </div>
+                      <div class="card-prev__content"><a class="card-prev__title" href="/">Стейк из свеклы с соусом терияки</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__footer">
+                  <button class="show-more" type="button"><span class="show-more__text">Показать еще</span>
+                    <div class="show-more__arrow">
+                      <svg class="svg-icon icon-arrow3 show-more__arrow-icon">
+                        <use xlink:href="images/svg/sprite/symbol/sprite.svg#arrow3"></use>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <div class="subscribe">
+          <div class="container">
+            <div class="subscribe__wrap" style="background-image: url('images/content/subscribe-bg.jpg');">
+              <div class="subscribe__info">
+                <h4 class="subscribe__title">Хотите быть в курсе новостей?</h4>
+                <p class="subscribe__desc">Подпишитесь на нашу рассылку. Мы обещаем писать редко и по делу</p>
+              </div>
+              <form class="form subscribe__form" method="post">
+                <div class="form__group">
+                  <input class="form__field" type="email" placeholder="Ваш e-mail" required>
+                  <button class="form__send" type="submit">
+                    <svg class="svg-icon icon-arrow4 form__send-arrow">
+                      <use xlink:href="images/svg/sprite/symbol/sprite.svg#arrow4"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="form__checkbox">
+                  <input class="form__checkbox-field" type="checkbox" id="policy">
+                  <label class="form__checkbox-label" for="policy">Нажимая кнопку, я подтверждаю, что ознакомлен(а) с <a href="/" class="form__checkbox-link">Пользовательским соглашением</a> и <a href="/" class="form__checkbox-link">Политикой конфиденциальности</a> и даю согласие на обработку персональных данных</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__wrap">
+              <div class="footer__main">
+                <div class="footer__side"><a class="logo footer__logo" href="/"><img class="footer__logo-img" src="images/general/logo2.svg" alt="" width="88" height="24"></a>
+                  <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                      <li class="footer__nav-item"><a class="footer__nav-link" href="/">Партнеры</a></li>
+                      <li class="footer__nav-item"><a class="footer__nav-link" href="/">Медиакит</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="footer__side">
+                  <div class="social footer__social"><a class="social__link social__link--facebook footer__social-link" href="/">
+                      <svg class="svg-icon icon-facebook social__link-icon footer__social-icon">
+                        <use xlink:href="images/svg/sprite/symbol/sprite.svg#facebook"></use>
+                      </svg></a><a class="social__link social__link--instagram footer__social-link" href="/">
+                      <svg class="svg-icon icon-instagram social__link-icon footer__social-icon">
+                        <use xlink:href="images/svg/sprite/symbol/sprite.svg#instagram"></use>
+                      </svg></a><a class="social__link social__link--youtube footer__social-link" href="/">
+                      <svg class="svg-icon icon-youtube social__link-icon footer__social-icon">
+                        <use xlink:href="images/svg/sprite/symbol/sprite.svg#youtube"></use>
+                      </svg></a></div><a class="partner" href="/"><span class="partner__title">Партнер проекта</span>
+                    <div class="partner__img"><img class="partner__img-pic" src="images/content/partner.svg" alt="" width="22" height="16"></div></a>
+                </div>
+              </div>
+              <div class="footer__bottom">
+                <p class="copy">KraftHeinz Foodservice © 2021. Все права защищеныdi</p><a class="policy-link" href="/">Пользовательское соглашение</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="js/vendor/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <noscript><link rel="stylesheet" href="css/styles.min.css"></noscript>
+  </body>
+</html>
